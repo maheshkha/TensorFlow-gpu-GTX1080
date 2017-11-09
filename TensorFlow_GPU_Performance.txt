@@ -1,0 +1,129 @@
+CPU Results
+
+[tensorflow] C:\mahesh_PMQI\Personal\New_Life>python MatrixMul_Tensor.py cpu 4500
+2017-11-08 17:24:00.728610: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2017-11-08 17:24:01.140036: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1030] Found device 0 with properties:
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:04:00.0
+totalMemory: 8.00GiB freeMemory: 6.61GiB
+2017-11-08 17:24:01.140145: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080, pci bus id: 0000:04:00.0, compute capability: 6.1)
+Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1080, pci bus id: 0000:04:00.0, compute capability: 6.1
+2017-11-08 17:24:01.401389: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\direct_session.cc:299] Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1080, pci bus id: 0000:04:00.0, compute capability: 6.1
+
+random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.410329: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/sub: (Sub)/job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.411863: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/RandomUniform: (RandomUniform)/job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.412694: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/mul: (Mul)/job:localhost/replica:0/task:0/device:CPU:0
+random_uniform: (Add): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.413444: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform: (Add)/job:localhost/replica:0/task:0/device:CPU:0
+transpose/Rank: (Rank): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.414197: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/Rank: (Rank)/job:localhost/replica:0/task:0/device:CPU:0
+transpose/Range: (Range): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.414942: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/Range: (Range)/job:localhost/replica:0/task:0/device:CPU:0
+transpose/sub: (Sub): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.415690: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/sub: (Sub)/job:localhost/replica:0/task:0/device:CPU:0
+transpose/sub_1: (Sub): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.416432: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/sub_1: (Sub)/job:localhost/replica:0/task:0/device:CPU:0
+transpose: (Transpose): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.417180: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose: (Transpose)/job:localhost/replica:0/task:0/device:CPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.417949: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] MatMul: (MatMul)/job:localhost/replica:0/task:0/device:CPU:0
+Sum: (Sum): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.418722: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] Sum: (Sum)/job:localhost/replica:0/task:0/device:CPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.419464: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] Const: (Const)/job:localhost/replica:0/task:0/device:CPU:0
+transpose/Range/delta: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.420232: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/Range/delta: (Const)/job:localhost/replica:0/task:0/device:CPU:0
+transpose/Range/start: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.422766: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/Range/start: (Const)/job:localhost/replica:0/task:0/device:CPU:0
+transpose/sub/y: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.423555: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/sub/y: (Const)/job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.424327: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/max: (Const)/job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.425080: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/min: (Const)/job:localhost/replica:0/task:0/device:CPU:0
+random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2017-11-08 17:24:01.425836: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/shape: (Const)/job:localhost/replica:0/task:0/device:CPU:0
+2.27963e+10
+
+
+
+
+
+
+Shape: (4500, 4500) Device: /cpu:0
+Time taken: 0:00:02.598863
+
+
+
+
+
+
+GPU Results
+[tensorflow-gpu] C:\mahesh_PMQI\Personal\New_Life>python MatrixMul_Tensor.py gpu 4500
+2017-11-08 17:24:53.171541: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2017-11-08 17:24:53.555905: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1030] Found device 0 with properties:
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:04:00.0
+totalMemory: 8.00GiB freeMemory: 6.61GiB
+2017-11-08 17:24:53.556021: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080, pci bus id: 0000:04:00.0, compute capability: 6.1)
+Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1080, pci bus id: 0000:04:00.0, compute capability: 6.1
+2017-11-08 17:24:53.819245: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\direct_session.cc:299] Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: GeForce GTX 1080, pci bus id: 0000:04:00.0, compute capability: 6.1
+
+random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.828114: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.829724: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/RandomUniform: (RandomUniform)/job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.830518: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.830935: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+transpose/Rank: (Rank): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.831680: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/Rank: (Rank)/job:localhost/replica:0/task:0/device:GPU:0
+transpose/Range: (Range): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.832423: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/Range: (Range)/job:localhost/replica:0/task:0/device:GPU:0
+transpose/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.833307: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+transpose/sub_1: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.834050: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/sub_1: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+transpose: (Transpose): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.834782: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose: (Transpose)/job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.835513: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] MatMul: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.836287: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.837038: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+transpose/Range/delta: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.837788: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/Range/delta: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+transpose/Range/start: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.838522: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/Range/start: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+transpose/sub/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.841134: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] transpose/sub/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.842086: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/max: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.842891: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/min: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+random_uniform/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+2017-11-08 17:24:53.843636: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\placer.cc:874] random_uniform/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2.27829e+10
+
+
+
+
+
+
+Shape: (4500, 4500) Device: /gpu:0
+Time taken: 0:00:01.350969
+
+
+
+
+
+
